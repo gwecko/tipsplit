@@ -7,10 +7,11 @@ export default function Header() {
     <Box
       display={"flex"}
       flexDirection={"row"}
-      bg={"green.600"}
+      bg={"green.100"}
       justifyContent={"space-between"}
       alignItems={"center"}
       paddingX={4}
+      w={'100%'}
     >
       <Link
         href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"

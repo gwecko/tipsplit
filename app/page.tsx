@@ -1,25 +1,21 @@
-import DeployButton from "../components/DeployButton";
-import AuthButton from "../components/AuthButton";
-import { createClient } from "@/utils/supabase/server";
-import { Box, Heading } from "@chakra-ui/react";
+import { Heading, Link, Container } from "@chakra-ui/react";
 
-export default async function Index() {
-  const canInitSupabaseClient = () => {
-    // This function is just for the interactive tutorial.
-    // Feel free to remove it once you have Supabase connected.
-    try {
-      createClient();
-      return true;
-    } catch (e) {
-      return false;
-    }
-  };
-
-  const isSupabaseConnected = canInitSupabaseClient();
-
+const HomePage: React.FC = () => {
   return (
-    <Box>
-      <Heading>ayyooo TipSplit</Heading>
-    </Box>
+    <>
+      <Container
+        bg={'green.400'}
+        alignItems={'end'}
+        mt={'30%'}
+        p={7}
+        pr={10}
+        borderRadius={'12px'}
+      >
+        <Heading>Let's do this!</Heading>
+        <Link href="/login">Login page</Link>
+      </Container>
+    </>
   );
-}
+};
+
+export default HomePage;

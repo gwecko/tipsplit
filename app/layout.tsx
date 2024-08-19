@@ -20,14 +20,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Providers>
-        <body>
+      <body>
+        <Providers>
           <Header />
           <main>
-            <Box bg={"green.900"}>{children}</Box>
+            <Box
+              bg={"green.900"}
+              width={"100%"}
+              height={"100%"}
+              display={"flex"}
+              flexDir={"column"}
+              alignItems={"center"}
+            >
+              {children}
+            </Box>
           </main>
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }
