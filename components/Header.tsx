@@ -7,6 +7,8 @@ export default function Header() {
     <Box
       display={"flex"}
       flexDirection={"row"}
+      top={0}
+      position={'sticky'}
       bg={"green.100"}
       justifyContent={"space-between"}
       alignItems={"center"}

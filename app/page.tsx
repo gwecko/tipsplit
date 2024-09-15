@@ -1,21 +1,14 @@
 import { Heading, Link, Container } from "@chakra-ui/react";
 
-const HomePage: React.FC = () => {
+const LandingPage: React.FC = () => {
   return (
-    <>
-      <Container
-        bg={'green.400'}
-        alignItems={'end'}
-        mt={'30%'}
-        p={7}
-        pr={10}
-        borderRadius={'12px'}
-      >
+    <Container>
+      <Container bg={"green.400"} alignItems={"end"} mt={"8rem"}>
         <Heading>Let's do this!</Heading>
         <Link href="/login">Login page</Link>
       </Container>
-    </>
+    </Container>
   );
 };
 
-export default HomePage;
+export default LandingPage;
